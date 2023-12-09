@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige tu vehiculo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+
+    <EditText
+        android:id="@+id/caballos"
+        android:layout_width="86dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="28dp"
+        android:hint="Escribe aquí"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/labelCaballos"
+        app:layout_constraintTop_toBottomOf="@+id/color" />
+
+    <EditText
+        android:id="@+id/modelo"
+        android:layout_width="86dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:hint="Escribe aquí"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/labelModelo"
+        app:layout_constraintTop_toBottomOf="@+id/marca" />
+
+    <TextView
+        android:id="@+id/labelPuertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puertas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelCaballos"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Spinner
+        android:id="@+id/color"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="212dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/labelColor"
+        app:layout_constraintTop_toBottomOf="@+id/modelo" />
+
+    <EditText
+        android:id="@+id/puertas"
+        android:layout_width="86dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:hint="Escribe aquí"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/labelPuertas"
+        app:layout_constraintTop_toBottomOf="@+id/caballos" />
+
+    <TextView
+        android:id="@+id/labelCaballos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caballos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelColor"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/labelModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelMarca"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/labelColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelModelo"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/labelMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <Spinner
+        android:id="@+id/marca"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="212dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toEndOf="@+id/labelMarca"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="107dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="408dp"
+        android:checkedButton="@id/rb1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:text="Si"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:text="No"
+            android:textSize="12sp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelClimatizador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+
+        android:text="Climatizador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <CheckBox
+        android:id="@+id/chB1"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:checked="true"
+        android:enabled="true"
+        android:fontFamily="@font/alice"
+        android:text="Navegador"
+        android:textSize="12sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
+
+    <CheckBox
+        android:id="@+id/chB2"
+        android:layout_width="161dp"
+        android:layout_height="42dp"
+        android:checked="false"
+        android:enabled="true"
+        android:fontFamily="@font/alice"
+        android:text="Android Auto"
+        android:textSize="12sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chB1" />
+
+    <CheckBox
+        android:id="@+id/chB3"
+        android:layout_width="162dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="228dp"
+        android:checked="false"
+        android:enabled="true"
+        android:fontFamily="@font/alice"
+        android:text="Asientos calefactables"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chB2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:text="Crear Vehiculo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
