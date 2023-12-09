@@ -114,16 +114,16 @@ class MainActivity : AppCompatActivity() {
             color="Rojo"
             caballos=binding.caballos.text.toString().toDouble()
             puertas=binding.puertas.text.toString().toInt()
-            climatizador = binding.rb1.isSelected
+            climatizador = binding.rb1.isChecked
 
-            navegador = binding.chB1.isSelected
-            androidAuto = binding.chB2.isSelected
-            asientosCalefactables = binding.chB3.isSelected
+            navegador = binding.chB1.isChecked
+            androidAuto = binding.chB2.isChecked
+            asientosCalefactables = binding.chB3.isChecked
             var coche:Coche= Coche(color,marca,modelo,climatizador,caballos,puertas,navegador,androidAuto,asientosCalefactables)
 
 
             val intent = Intent(this,SecondActivity::class.java)
-            intent.putExtra("Coche","Data: \n $coche")
+            intent.putExtra("Coche",coche)
             startActivity(intent)
         }
 
