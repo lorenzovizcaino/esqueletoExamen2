@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">esqueletoExamen2</string>
     <string name="climatizadorSI">Automovil con climatizador</string>
     <string name="climatizadorNO">Automovil sin climatizador</string>
 
-    <string name="selecionado">selecionado</string>
-    <string name="deselecionado">deselecionado</string>
+    <string name="selecionado">selected</string>
+    <string name="deselecionado">deselected</string>
 
 </resources>

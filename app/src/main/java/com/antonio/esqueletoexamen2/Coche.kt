@@ -10,4 +10,7 @@ class Coche (color:String,
              var androidAuto:Boolean,
              var asientosCalefactables:Boolean):Vehiculo(color,marca) {
 
+    override fun toString(): String {
+        return "Coche(marca='$marca',modelo='$modelo',color='$color', climatizador=$climatizador, caballos=$caballos, puertas=$puertas, navegador=$navegador, androidAuto=$androidAuto, asientosCalefactables=$asientosCalefactables)"
+    }
 }

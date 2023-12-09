@@ -20,24 +20,27 @@
 
     <EditText
         android:id="@+id/caballos"
-        android:layout_width="86dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
         android:hint="Escribe aquí"
         android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toEndOf="@+id/labelCaballos"
         app:layout_constraintTop_toBottomOf="@+id/color" />
 
     <EditText
         android:id="@+id/modelo"
-        android:layout_width="86dp"
-        android:layout_height="22dp"
+        android:layout_width="93dp"
+        android:layout_height="41dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/alice"
         android:hint="Escribe aquí"
         android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/labelModelo"
@@ -53,14 +56,14 @@
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelCaballos"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <Spinner
         android:id="@+id/color"
         android:layout_width="85dp"
         android:layout_height="21dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="212dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.733"
@@ -69,13 +72,14 @@
 
     <EditText
         android:id="@+id/puertas"
-        android:layout_width="86dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="101dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
         android:hint="Escribe aquí"
         android:inputType="text"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toEndOf="@+id/labelPuertas"
         app:layout_constraintTop_toBottomOf="@+id/caballos" />
 
@@ -89,7 +93,7 @@
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelColor"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.106" />
 
     <TextView
         android:id="@+id/labelModelo"
@@ -101,7 +105,7 @@
         app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelMarca"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.095" />
 
     <TextView
         android:id="@+id/labelColor"
@@ -113,7 +117,7 @@
         app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelModelo"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
         android:id="@+id/labelMarca"
