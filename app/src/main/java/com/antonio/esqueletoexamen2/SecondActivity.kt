@@ -1,7 +1,10 @@
 package com.antonio.esqueletoexamen2
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.antonio.esqueletoexamen2.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
@@ -17,7 +20,7 @@ class SecondActivity : AppCompatActivity() {
         val navi:String
         val androAuto:String
         val asiCalefac:String
-        println(coche.toString())
+
 
 
 
@@ -52,5 +55,33 @@ class SecondActivity : AppCompatActivity() {
         }
 
 
+        binding.boton2.setOnClickListener {
+            showAlertDialog()
+        }
+
+
+    }
+
+    private fun showToast(string: String) {
+        Toast.makeText(this,string, Toast.LENGTH_SHORT).show()
+
+    }
+
+    private fun showAlertDialog() {
+        val alertDialogBuilder = AlertDialog.Builder(this)
+
+        alertDialogBuilder.setTitle(getString(R.string.confirmacion_de_pedido))
+        alertDialogBuilder.setMessage(getString(R.string.el_pedido_va_a_ser_procesado))
+        alertDialogBuilder.setPositiveButton(getString(R.string.aceptar)) { dialog: DialogInterface, which: Int ->
+            val string = getString(R.string.pedido_confirmado)
+
+            showToast(string)
+        }
+        alertDialogBuilder.setNegativeButton(getString(R.string.cancelar)) { dialog: DialogInterface, which: Int ->
+            showToast(getString(R.string.pedido_cancelado))
+        }
+
+        val alertDialog = alertDialogBuilder.create()
+        alertDialog.show()
     }
 }

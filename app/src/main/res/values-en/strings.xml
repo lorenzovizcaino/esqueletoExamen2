@@ -28,4 +28,11 @@
     <string name="androidAuto">Android Auto: </string>
     <string name="asientoCalefactable">Asiento Calefactable: </string>
 
+    <string name="confirmacion_de_pedido">Order confirmation</string>
+    <string name="el_pedido_va_a_ser_procesado">The order will be processed</string>
+    <string name="pedido_confirmado">Confirmed order</string>
+    <string name="pedido_cancelado">Canceled order</string>
+    <string name="cancelar">Cancel</string>
+    <string name="aceptar">Accept</string>
+
 </resources>

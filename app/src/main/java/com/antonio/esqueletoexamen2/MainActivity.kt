@@ -1,10 +1,16 @@
 package com.antonio.esqueletoexamen2
 
+import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextWatcher
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.webkit.URLUtil
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.CheckBox
@@ -108,6 +114,8 @@ class MainActivity : AppCompatActivity() {
             DiferenciarCheckbox(binding.chB3)
         }
 
+
+        //evento de boton
         binding.boton1.setOnClickListener {
 
             modelo=binding.modelo.text.toString()
@@ -146,4 +154,6 @@ class MainActivity : AppCompatActivity() {
             showToast("$checkBoxText "+getString(R.string.deselecionado))
         }
     }
+
+
 }
